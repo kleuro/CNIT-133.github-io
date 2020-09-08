@@ -1,23 +1,66 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>CNIT 133</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link href="hw2.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+  $("#div1").text('xy').fadeTo("slow", 0.3);
+  $("#div2").text('12').fadeTo("slow", 0.4);
+  $("#div3").text('89').fadeTo("slow", 0.7);
+  });
+});
+</script>
+</head>
+<h2>Parts 1</h2>
+<button>Click to Fade Results</button><br><br>
+
+<div id="div1" style="font-family:'Times New Roman';color:red;"></div><br>
+<div id="div2" style="font-family:Arial, Helvetica, sans-serif;color:blue;"></div><br>
+<div id="div3" style="font-family:Impact;color:green;text-emphasis:italic;"></div>
+
+<script> 
+  $(document).ready(function(){
+  $("#flip").click(function(){
+  $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+  #panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+  }  
+  #panel {
+  padding: 70px;
+  display: none;
+  }
+</style>
+
+<script> 
+  $(document).ready(function(){
+  $("#flip").click(function(){
+  $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
 </head>
 <body>
-   <header>
-      <h1><em> HOMEWORK </em> <q>2</q></h1>
-         <div class="menu-bar">
-            <div class="logo">
-                <img src="ccsf.png">   
-            </div>
-            <div class="button">
-               <li class="btn btn-one"><a href="index.html">Back to Homepage</a></li>
-            </div> 
-         </div>             
-   </header>
-</body>
-</html> 
+<div id="flip">Click to slide the panel down or up</div>
+<div id="panel">Hello world!</div>
+</body></html>
