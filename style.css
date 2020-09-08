@@ -65,10 +65,9 @@ header
 
 .new-course
 {  
-    position: absolute;
-    margin-top: 320;
-    margin-left: 370px;  
-    width: 480px; 
+    float: left;;   
+    margin-left:280px;  
+    width: 680px; 
     font-family: monospace;
     text-align: center;    
 }
