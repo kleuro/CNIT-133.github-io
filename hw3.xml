@@ -34,13 +34,13 @@
 <Name>Robert Olson</Name>
 <Phone>(532)555-8981</Phone>
 <Email>rolson@delisp.net</Email>
-<Account_Total>25000</Account_Total>
+<Account_Total>$25000</Account_Total>
 </Clients>
 <Clients>
 <Name>Jim Wheatley</Name>
 <Phone>(542)555-8828</Phone>
 <Email>jim_wheatley@kyu.edu</Email>
-<Account_Total>83000</Account_Total>
+<Account_Total>$83000</Account_Total>
 </Clients>
 <Clients>
 <Name>Jane Wilson</Name>
