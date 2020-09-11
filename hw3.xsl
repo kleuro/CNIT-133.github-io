@@ -21,13 +21,14 @@
 		<td><xsl:value-of select="Phone"/></td>
 		<td><xsl:value-of select="Email"/></td>
 		<xsl:choose>
-			<xsl:when test="Account_Total !=80000">
-				<td><xsl:value-of select="Account_Total"/></td>		
-	
-			</xsl:when>	
+			
+				<xsl:when test="Account_Total !=80000">
+		
+					<td><xsl:value-of select="Account_Total"/></td>		
+				</xsl:when>			
 		<xsl:otherwise>		
-		   <td bgcolor="red">
-</td>
+		   <span style="red">
+</span>
 		</xsl:otherwise>
 		</xsl:choose>	
 	</tr>
