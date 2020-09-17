@@ -1,0 +1,96 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img10.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo img {
+    float: left;
+    margin: 20px;
+    padding: 15px 25px;
+    width: 210px;
+    height: auto;
+}
+
+.logo img:hover {
+    border: 3px solid rgb(250, 247, 247);
+    background-color: rgba(230, 10, 10, 0.87);
+    transition: all 0.3s ease-in;
+}
+
+.form {
+    float: right;
+    margin: 50px;
+    padding: 16px 3px;
+    width: 275px;
+    height: 5px;
+}
+
+.form:hover {
+    background: rgb(116, 230, 10);
+    transition: all 0.3s ease-in;
+}
+
+.main-nav {
+    float: right;
+    margin: 30px;
+    margin-right: 130px;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    background-color: transparent;
+}
+
+.main-nav li a {
+    font-size: 17px;
+    font-family: "Roboto", monospace;
+    border: 1px solid rgb(236, 24, 42);
+    color: rgb(245, 235, 235);
+    padding: 3px 15px;
+}
+
+.main-nav li a:hover {
+    Border: 3px solid blue;
+    background-color: rgb(116, 230, 10);
+    color: rgb(231, 17, 17);
+}
+
+h1 {
+    text-transform: uppercase;
+    color: rgb(168, 209, 91);
+    font-size: 70px;
+}
+
+.btn {
+    border: 3px solid white;
+    margin-left: 5px;
+    padding: 10px 30px;
+    font-size: 13px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+
+.btn-one {
+    background-color: darkorange;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-one:hover {
+    background-color: rgb(116, 230, 10);
+    transition: all 0.3s ease-in;
+}
+
+.btn-two {
+    background-color: darkred;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-two:hover {
+    background-color: rgb(116, 230, 10);
+    transition: all 0.3s ease-in;
+}
