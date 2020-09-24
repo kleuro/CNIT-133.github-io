@@ -1,0 +1,45 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(mod2.jpg);
+    background-size: cover;
+}
+
+img {
+    margin: 20px;
+    width: 210px;
+}
+
+h1 {
+    font-size: 35px;
+    color: rgb(243, 87, 14);
+}
+
+h2,
+p {
+    font-size: 30px;
+    color: rgb(60, 139, 241);
+}
+
+h2,
+p:hover {
+    width: 1220px;
+    border: 3px rgb(235, 228, 228);
+    color: rgb(243, 247, 35);
+}
+
+h3,
+li {
+    font-size: 25px;
+    color: rgb(236, 50, 37);
+}
+
+li,
+a:hover {
+    color: rgb(250, 32, 195);
+    transition: 0.3s;
+}
+
+pre,
+a {
+    font-size: 25px;
+    color: rgb(251, 251, 253);
+}
