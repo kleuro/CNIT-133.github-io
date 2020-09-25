@@ -12,11 +12,10 @@
 </head>
 
 <body>
-    <div class="logo">
-        <img src="ccsf.png">
-    </div>
-    <br>
     <h1><em> HOMEWORK </em> <q>2</q></h1>
+    <div class="logo">
+        <img src="css/ccsf.png">
+    </div>
     <h2>Parts 1 </h2>
     <button>Click to Fade Results</button><br><br>
     <script>
@@ -28,57 +27,58 @@
             });
         });
     </script>
-    <div id="div1" style="font-family: 'Times New Roman';color:red; "></div><br>
-    <div id="div2" style="font-family:Arial, Helvetica, sans-serif;color:blue; "></div><br>
-    <div id="div3" style="font-family:Impact;color:green;text-emphasis:italic; "></div>
+    <div id="div1" style="font-family:'Times New Roman';color:red;"></div><br>
+    <div id="div2" style="font-family:Arial, Helvetica, sans-serif;color:blue;"></div><br>
+    <div id="div3" style="font-family:Impact;color:green;text-emphasis:italic;"></div>
+
     <h2>Parts 2</h2>
     <script>
         $(document).ready(function() {
-            $("#flip ").click(function() {
-                $("#panel ").slideToggle("slow ");
+            $("#flip").click(function() {
+                $("#panel").slideToggle("slow");
             });
         });
     </script>
-    <div id="flip ">'Click to Show/Hide Instructions'</div>
-    <div id="panel ">The foreign exchange rates in July 2019 and Enter a dollar amount in the table below to see the corresponding foreign exchange values'</div>
+    <div id="flip">'Click to Show/Hide Instructions'</div>
+    <div id="panel">The foreign exchange rates in July 2019 and Enter a dollar amount in the table below to see the corresponding foreign exchange values'</div>
 
     <h2>Parts 3</h2>
-    <section class="body ">
-        <form name="myform ">
+    <section class="body">
+        <form name="myform">
             <table>
                 <tr>
                     <th>British Pound</th>
-                    <td><input type="text " name="num1 " size="10 " value="0.76 " readonly></td>
-                    <td><input type="text " name="result1 " size="10 "></td>
+                    <td><input type="text" name="num1" size="10" value="0.76" readonly></td>
+                    <td><input type="text" name="result1" size="10"></td>
                 </tr>
                 <tr>
                     <th>Canada Dollar</th>
-                    <td><input type="text " name="num2 " size="10 " value="13.10 " readonly></td>
-                    <td><input type="text " name="result2 " size="10 "></td>
+                    <td><input type="text" name="num2" size="10" value="13.10" readonly></td>
+                    <td><input type="text" name="result2" size="10"></td>
                 </tr>
                 <tr>
                     <th>Euro</th>
-                    <td><input type="text " name="num3 " size="10 " value="8.90 " readonly></td>
-                    <td><input type="text " name="result3 " size="10 "></td>
+                    <td><input type="text" name="num3" size="10" value="8.90" readonly></td>
+                    <td><input type="text" name="result3" size="10"></td>
                 </tr>
                 <tr>
                     <th>Japanese Yen</th>
-                    <td><input type="text " name="num4 " size="10 " value="1083.80 " readonly></td>
-                    <td><input type="text " name="result4 " size="10 "></td>
+                    <td><input type="text" name="num4" size="10" value="1083.80" readonly></td>
+                    <td><input type="text" name="result4" size="10"></td>
                 </tr>
                 <tr>
                     <th>Mexican Peso</th>
-                    <td><input type="text " name="num5 " size="10 " value="191.10 " readonly></td>
-                    <td><input type="text " name="result5 " size="10 "></td>
+                    <td><input type="text" name="num5" size="10" value="191.10" readonly></td>
+                    <td><input type="text" name="result5" size="10"></td>
                 </tr>
                 <tr>
                     <td>Enter Amount of U.S.Dollars</td>
-                    <td><input type="text " name="num6 " size="10 "></td>
+                    <td><input type="text" name="num6" size="10"></td>
                 </tr>
             </table>
             <br><br>
-            <input type="button " onclick="process() " value="SUBMIT ">
-            <input type="reset " value="RESET ">
+            <input type="button" onclick="process()" value="SUBMIT">
+            <input type="reset" value="RESET">
         </form>
     </section>
     <script>
@@ -87,12 +87,12 @@
             var number1, number2, number3, number4, number5, number6,
                 n1, n2, n3, n4, n5, n6, sum;
             // Get list
-            number1 = document.forms["myform "].elements["num1 "].value;
-            number2 = document.forms["myform "].elements["num2 "].value;
-            number3 = document.forms["myform "].elements["num3 "].value;
-            number4 = document.forms["myform "].elements["num4 "].value;
-            number5 = document.forms["myform "].elements["num5 "].value;
-            number6 = document.forms["myform "].elements["num6 "].value;
+            number1 = document.forms["myform"].elements["num1"].value;
+            number2 = document.forms["myform"].elements["num2"].value;
+            number3 = document.forms["myform"].elements["num3"].value;
+            number4 = document.forms["myform"].elements["num4"].value;
+            number5 = document.forms["myform"].elements["num5"].value;
+            number6 = document.forms["myform"].elements["num6"].value;
             //Prevent link action
             n1 = parseInt(number1);
             n2 = parseInt(number2);
@@ -107,15 +107,15 @@
             sum4 = n6 * n4;
             sum5 = n6 * n5;
 
-            document.forms["myform "].elements["result1 "].value = sum1;
-            document.forms["myform "].elements["result2 "].value = sum2;
-            document.forms["myform "].elements["result3 "].value = sum3;
-            document.forms["myform "].elements["result4 "].value = sum4;
-            document.forms["myform "].elements["result5 "].value = sum5;
+            document.forms["myform"].elements["result1"].value = sum1;
+            document.forms["myform"].elements["result2"].value = sum2;
+            document.forms["myform"].elements["result3"].value = sum3;
+            document.forms["myform"].elements["result4"].value = sum4;
+            document.forms["myform"].elements["result5"].value = sum5;
         }
     </script>
-    <div class="button ">
-        <li class="btn btn-one "><a href="CNIT 133.html ">Back to Homepage</a></li>
+    <div class="button">
+        <li class="btn btn-one"><a href="CNIT 133.html">Back to Homepage</a></li>
     </div>
 </body>
 
