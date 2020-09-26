@@ -8,7 +8,7 @@
 	<head><title>hw4.xsl</title></head>
 <body>	
 	<h1>ABC Financial Startup</h1>	
-	<img src="css/hw4.jpg"></img>
+	<img src="hw4.jpg"></img>
 	<p>We currently have <xsl:value-of select="count(List/Client)"/> customer.</p>
 	<p>Here is our client name list <xsl:for-each select="List/Client">, <xsl:value-of select="Name"/></xsl:for-each>.</p>
 	<p>Company establish more than 7 years result by owner name<xsl:apply-templates select="List/Client[Years &gt;6]"/><xsl:value-of select="Name"/>.</p>	
