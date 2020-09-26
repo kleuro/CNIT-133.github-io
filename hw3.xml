@@ -1,61 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Thu Sep 03 00:43:10 PDT 2020 -->
+<?xml version="1.0" encoding="UTF-8"?> 
 
 <?xml-stylesheet type="text/xsl" href="hw3.xsl"?>
-
-<List>
-
-<Clients>
-<Name>Steve Bones</Name>
-<Phone>(533)555-5434</Phone>
-<Email>Sbone@mail.com</Email>
-<Account_Total>$10500</Account_Total>
-</Clients>
-<Clients>
-<Name>Cynthia Browne</Name>
-<Phone>(532)555-3813</Phone>
-<Email>cynthia@brown.com</Email>
-<Account_Total>$80000</Account_Total>
-</Clients>
-<Clients>
-<Name>Lee Hayes</Name>
-<Phone>(534)555-9082</Phone>
-<Email>leehayes@clarion.net</Email>
-<Account_Total>$118000</Account_Total>
-</Clients>
-<Clients>
-<Name>Cindy Kaufmann</Name>
-<Phone>(532)555-7212</Phone>
-<Email>cka@ispnet.net</Email>
-<Account_Total>$125000</Account_Total>
-</Clients>
-<Clients >
-<Name>Robert Olson</Name>
-<Phone>(532)555-8981</Phone>
-<Email>rolson@delisp.net</Email>
-<Account_Total>$25000</Account_Total>
-</Clients>
-<Clients>
-<Name>Jim Wheatley</Name>
-<Phone>(542)555-8828</Phone>
-<Email>jim_wheatley@kyu.edu</Email>
-<Account_Total>$83000</Account_Total>
-</Clients>
-<Clients>
-<Name>Jane Wilson</Name>
-<Phone>(534)555-7493</Phone>
-<Email>jwilson@cls.net</Email>
-<Account_Total>$95000</Account_Total>
-</Clients>
-<Clients>
-<Name>Grant Wu</Name>
-<Phone>(532)555-9939</Phone>
-<Email>gwu@brockton.com</Email>
-<Account_Total>$60000</Account_Total>
-</Clients>
-
+   
+<List> 
+   <Client>
+      <Name>Steve Bones</Name>
+      <Phone>(533)555-5434</Phone>
+      <Email>Sbone@mail.com</Email>
+      <Account_Total>$10500</Account_Total>
+   </Client> 
+   <Client>
+      <Name>Cynthia Brown</Name>
+      <Phone>(532)555-3813</Phone>
+      <Email>cynthia@brown.com</Email>
+      <Account_Total>$80000</Account_Total>     
+   </Client>
+   <Client>
+      <Name>Lee Hayes</Name>
+      <Phone>(534)555-9082</Phone>
+      <Email>leehayes@clarion.net</Email>
+      <Account_Total>$118000</Account_Total>
+   </Client>
+   <Client>
+      <Name>Cindy Kaufmann</Name>
+      <Phone>(532)555-7212</Phone>
+      <Email>cka@ispnet.net</Email>
+      <Account_Total>$125000</Account_Total>
+   </Client>
+   <Client>
+      <Name>Robert Olson</Name>
+      <Phone>(532)555-8981</Phone>
+      <Email>rolson@delisp.net</Email>
+      <Account_Total>$25000</Account_Total>
+   </Client>
+   <Client>
+      <Name>Jim Wheatley</Name>
+      <Phone>(542)555-8828</Phone>
+      <Email>jim_wheatley@kyu.edu</Email>
+      <Account_Total>$83000</Account_Total>
+   </Client>
+   <Client>
+      <Name>Jane Wilson</Name>
+      <Phone>(534)555-7493</Phone>
+      <Email>jwilson@cls.net</Email>
+      <Account_Total>$95000</Account_Total>
+   </Client>
+   <Client>
+      <Name>Grant Wu</Name>
+      <Phone>(532)555-9939</Phone>
+      <Email>gwu@brockton.com</Email>
+      <Account_Total>$60000</Account_Total>
+   </Client>
 </List>
 
-
+     
 
