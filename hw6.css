@@ -1,48 +1,17 @@
-header
-{
-   background-image: url(img6.jpg);
-   height: 100vh;
-   background-size: cover;
-   background-position: 10;
-}
+Menber {background-color: rgb(124, 228, 111); Font-family: Verdana, Times, sans-serif;}
 
-.logo img
-{
-    float: left;
-    margin: 15px;
-    padding: 15px 25px;
-    width: 238px;
-    height: auto;
-}
-.logo img:hover
-{
-    border: 3px solid rgb(250, 247, 247);
-    background-color: rgba(230, 10, 10, 0.87);
-    transition: all 0.3s ease-in;
-}
+Name, Age, Job, Date, Phone { display: block; }
 
-h1
-{
-   float: right;
-   margin-right: 400px;
-   color: white;  
-   font-size: 60px;
-}
+Prod:nth-child(even) { background-color: skyblue;}
 
-.btn
-{
-    margin: 250px;   
-    border: 3px solid rgb(214, 233, 50);
-    padding: 10px 30px;   
-    font-size: 13px;
-    color: rgb(209, 22, 22);
-    background-color: darkorange;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in;
-}   
+Name { font-weight: bold; color: rgb(32, 80, 236); font-size: 1.3em;}
 
-.btn-one:hover
-{
-    border: 3px solid rgb(238, 15, 27);
-    background-color: rgb(116, 230, 10);    
-}
+Age { font-weight: bold; color: Black; font-size: 1.0em;}
+
+Job{ font-weight: bold; font-style:italic; font-size: 1.3em;}
+
+Date { font-style:italic; font-size: 1.3em; }
+
+Phone{ font-style:italic; font-size: 1.3em; }
+
+Loc { font-weight: bold; color: red; font-size: 1.5em; }
