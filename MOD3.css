@@ -35,7 +35,7 @@ body {
     margin: 20px;
     padding: 15px 25px;
     border: 3px solid rgb(250, 247, 247);
-    width: 908px;
+    width: 780px;
     height: 10;
     background-color: rgba(86, 29, 243, 0.87);
 }
@@ -45,7 +45,7 @@ body {
     margin: 20px;
     padding: 15px 25px;
     border: 3px solid rgb(250, 247, 247);
-    width: 908px;
+    width: 780px;
     height: 10;
     background-color: rgba(240, 49, 183, 0.87);
 }
@@ -54,7 +54,7 @@ body {
     float: left;
     margin: 45px;
     border: 3px solid rgb(250, 247, 247);
-    width: 338px;
+    width: 330px;
     background-color: rgba(236, 55, 55, 0.87);
 }
 
