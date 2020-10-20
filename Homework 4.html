@@ -1,23 +1,61 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>CNIT 133</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link href="hw4.css" rel="stylesheet" type="text/css">
+    <title>hw 4</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Looping Statements">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="Homework 4.css" rel="stylesheet" type="text/css">
 </head>
+
+
 <body>
-   <header>
-      <h1><em> HOMEWORK </em> <q>4</q></h1>
-         <div class="menu-bar">
-            <div class="logo">
-                <img src="ccsf.png">   
-            </div>
-            <div class="button">
-               <li class="btn btn-one"><a href="CNIT 133.html">Back to Homepage</a></li>
-            </div> 
-         </div>             
-   </header>
+    <h1><em> HOMEWORK </em> <q>4</q></h1>
+    <div class="logo">
+        <img src="img/ccsf.png">
+    </div>
+    <h2>Part 1a ~ For Statement</h2>
+    <h2>Part 1b ~ While Statment</h2>
+    <h2>Part 2</h2>
+    <script type="text/javascript">
+        var r;
+        var P = 1000;
+        var A;
+        o = {
+            style: "currency",
+            currency: "USD"
+        };
+        for (var i = 1; i <= 3; i++) {
+            if (i == 1) {
+                r = 0.05;
+            }
+            if (i == 2) {
+                r = 0.06;
+            }
+            if (i == 3) {
+                r = 0.07;
+            }
+            document.writeln("<table>");
+            document.writeln("<th>" + "Year" + "</th>");
+            document.writeln("<th>" + "Amount on Deposit" + "</th>");
+            document.writeln("<th>" + "Interest Rate" + "</th>");
+            for (var n = 1; n <= 10; n++) {
+                document.writeln("<tr>");
+                A = P * Math.pow((1 + r), n);
+                document.writeln("<td>" + n + "</td>");
+                document.writeln("<td>" + A.toLocaleString("en", o) + " </td>");
+                document.writeln("<td>" + r + "</td>");
+                document.writeln("</tr>");
+            }
+            document.writeln("</table>");
+        }
+    </script>
+    <div class="button">
+        <li class="btn btn-one"><a href="CNIT 133.html">Back to Homepage</a></li>
+    </div>
 </body>
-</html> 
+
+</html>
