@@ -32,7 +32,8 @@ h2 {
     margin-left: 5px;
     font-size: 45px;
     color: rgb(61, 224, 97);
-    
+}
+
 #draggable {
     color: rgb(225, 238, 43);
     border: 3px solid rgb(250, 247, 247);
