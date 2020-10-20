@@ -16,7 +16,19 @@
     <div class="logo">
         <img src="ccsf.png">
     </div>
-    <h2>Part 1a ~ For Statement</h2>
+    <h2>Part 1a ~ For Statement</h2
+    <div id="draggable">
+        <script>
+            var sum = 0;
+            var product = 1;
+            for (var number = 5; number <= 21; number += 4) {
+                sum += number;
+                product *= number;
+            }
+            document.write("<p>The SUM fo every fourth integer between 5 and 21 is " + "" + sum + " </p>");
+            document.write("<p>The Product of every fourth number 5 to 21 inclusive is " + "" + product.toLocaleString() + "</p>");
+        </script>
+    </div>
     <h2>Part 1b ~ While Statment</h2>
     <h2>Part 2</h2>
     <script type="text/javascript">
