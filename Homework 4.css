@@ -32,12 +32,14 @@ h2 {
     margin-left: 5px;
     font-size: 45px;
     color: rgb(61, 224, 97);
-}
-
-h3 {
-    margin-right: 110px;
-    font-size: 30px;
-    inset-inline-start: rgb(234, 241, 236);
+    
+#draggable {
+    color: rgb(225, 238, 43);
+    border: 3px solid rgb(250, 247, 247);
+    background-color: rgba(163, 125, 233, 0.87);
+    font-size: 20px;
+    width: 600px;
+    height: 100px;
 }
 
 table {
