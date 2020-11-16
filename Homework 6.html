@@ -1,23 +1,89 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>CNIT 133</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link href="hw6.css" rel="stylesheet" type="text/css">
+    <title>CNIT 133</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="homework 6.css" rel="stylesheet" type="text/css">
+    <script src="Homework 6.js"></script>
 </head>
-<body>
-   <header>
-      <h1><em> HOMEWORK </em> <q>6</q></h1>
-         <div class="menu-bar">
-            <div class="logo">
-                <img src="ccsf.png">   
-            </div>
-            <div class="button">
-               <li class="btn btn-one"><a href="index.html">Back to Homepage</a></li>
-            </div> 
-         </div>             
-   </header>
+
+<body onload="document.forms['myForm'].elements['input'].focus();">
+    <h1><em> HOMEWORK </em> <q>6</q></h1>
+    <div class="logo">
+        <img src="img/ccsf.png">
+    </div>
+    <hr>
+    <section class="body">
+        <div id="errOut"></div>
+        <form name="myForm">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="inputzip">"Enter a Zip Code"
+                            <br>"[in the form 99999-9999]"
+                        </label>
+                        </td>
+                        <td>
+                            <input name="input" id="inputzip" type="text" size="10" autofocus>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="Split" onclick="checkDate()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="zip">Zip Code:</label>
+                        </td>
+                        <td>
+                            <input name="zipCode" id="zip " type="text " size="10" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ext">Zip Extension:</label>
+                        </td>
+                        <td>
+                            <input name="extension" id="ext" type="text" size="10" readonly>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="reset" value="Reset" onclick="window.location.reload();">
+        </form>
+    </section>
+    <script>
+        function checkDate() {
+            var errMsg = "Invalid zip code";
+            var completeNumber = document.forms["myForm"].elements["input"].value;
+            zipRegExp = /^(\d{5})(-\d{4})$/;
+            if (!zipRegExp.test(completeNumber)) {
+                document.getElementById("errOut").innerHTML + errMsg;
+                document.forms["myForm"].elements["zipCode"].value = "";
+                document.forms["myForm"].elements["extension"].value = "";
+            } else {
+                var tokens = completeNumber.split("-");
+                var zipMain = tokens[0];
+                var zipExt = tokens[1];
+                document.getElementById("errOut").innerHTML = "";
+                document.forms["myForm"].elements["zipCode"].value = zipMain;
+                document.forms["myForm"].elements["extension"].value = zipExt;
+            }
+        }
+    </script>
+    <div class="button">
+        <li class="btn btn-one">
+            <a href="CNIT 133.html"> Back to Homepage</a>
+        </li>
+    </div>
 </body>
-</html> 
+
+
+</html>
