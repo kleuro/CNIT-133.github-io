@@ -1,0 +1,144 @@
+    /* css reset - makes the layout looking good in all browsers */
+    
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(img/img7.jpg);
+        margin-left: 30px;
+        margin-right: 30px;
+        background-size: cover;
+    }
+    
+    .logo img {
+        float: top;
+        margin: 10px;
+        padding: 15px 25px;
+        width: 238px;
+        height: auto;
+    }
+    
+    .logo img:hover {
+        border: 3px solid rgb(250, 247, 247);
+        background-color: rgba(230, 10, 10, 0.87);
+        transition: all 0.3s ease-in;
+    }
+    
+    h1 {
+        margin-right: 250px;
+        float: right;
+        font-size: 60px;
+        color: rgb(34, 22, 22);
+    }
+    
+    h1:hover {
+        color: rgb(222, 218, 236);
+        transition: all 0.3s ease-in;
+    }
+    
+    h3 {
+        margin-left: 5px;
+        font-size: 30px;
+        color: rgb(212, 240, 56);
+    }
+    
+    hr {
+        background-color: rgb(237, 240, 223);
+        border-color: red;
+        border-style: dotted;
+        border-top-right-radius: 90%;
+        border-top-left-radius: 90%;
+        border-bottom-right-radius: 90%;
+        border-bottom-left-radius: 90%;
+        border-width: 1px;
+        width: 97%;
+    }
+    
+    table {
+        margin-left: 5px;
+        font-size: 20px;
+        color: rgb(216, 47, 151);
+        border-spacing: 50px;
+        background-color: transparent;
+    }
+    
+    th {
+        text-align: center;
+        color: rgb(243, 111, 35);
+    }
+    
+    a {
+        text-align: right;
+        color: rgb(105, 126, 247);
+    }
+    
+    a:hover {
+        color: rgb(236, 65, 228);
+        transition: all 0.1s ease-in;
+    }
+    
+    th:hover {
+        color: rgb(221, 245, 8);
+        transition: all 0.1s ease-in;
+    }
+    
+    #sampleText {
+        margin: 30px 10px 30px;
+        padding: 5px 10px;
+        border: 3px ridge blue;
+    }
+    /* Main Styles */
+    
+    #nav {
+        margin-left: 250px;
+    }
+    
+    ul#navigation li {
+        display: inline;
+        font-size: 12px;
+        font-weight: bold;
+        float: left;
+        border-top: 1px solid #c4dbe7;
+        border-bottom: 1px solid #c4dbe7;
+    }
+    
+    ul#navigation li a {
+        padding: 10px 25px;
+        color: #d4e0f3;
+        text-decoration: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #C2C2C2;
+        border-top: 1px solid #fff;
+        -webkit-transition: color 0.2s linear, background 0.2s linear;
+        -moz-transition: color 0.2s linear, background 0.2s linear;
+        -o-transition: color 0.2s linear, background 0.2s linear;
+        transition: color 0.2s linear, background 0.2s linear;
+    }
+    
+    ul#navigation li a:hover {
+        color: rgb(240, 55, 30);
+        background-color: rgb(57, 172, 238);
+        transition: all 0.1s ease-in;
+    }
+    /* Drop-Down Navigation */
+    
+    ul#navigation li:hover>ul {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    ul#navigation ul,
+    ul#navigation ul li ul {
+        list-style: none;
+        visibility: hidden;
+        position: absolute;
+        z-index: 99999;
+        width: 160px;
+        background: #f8f8f8;
+        box-shadow: 1px 1px 3px #ccc;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+        -webkit-transition: opacity 0.2s linear, visibility 0.2s linear;
+        -moz-transition: opacity 0.2s linear, visibility 0.2s linear;
+        -o-transition: opacity 0.2s linear, visibility 0.2s linear;
+        transition: opacity 0.2s linear, visibility 0.2s linear;
+    }
