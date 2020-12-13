@@ -1,6 +1,8 @@
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img10.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(img10.jpg);
     height: 100vh;
+    margin-left: 20px;
+    margin-right: 20px;
     background-size: cover;
     background-position: center;
 }
@@ -59,15 +61,23 @@ body {
 }
 
 h1 {
-    text-transform: uppercase;
+    text-align: center;
     color: rgb(168, 209, 91);
-    font-size: 70px;
+    font-size: 60px;
 }
 
-h3 {
+h3,
+p {
     text-transform: uppercase;
     color: rgb(233, 235, 243);
     font-size: 30px;
+}
+
+#demo,
+.demo1 {
+    text-transform: uppercase;
+    color: rgb(233, 235, 243);
+    font-size: 20px;
 }
 
 li {
