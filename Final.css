@@ -82,11 +82,13 @@ nav {
     align-items: center;
     padding: 5px;
     width: auto;
+    height: 500px;
     background-color: red;
 }
 
 article {
     float: left;
+    height: 500px;
     background-position: 100%;
     background-image: url(bg.jpg);
     background-size: cover;
