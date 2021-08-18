@@ -1,0 +1,50 @@
+body {
+    background: yellow;
+}
+
+.link {
+    color: blue;
+}
+
+.link:active {
+    color: red;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    color: blue;
+    text-align: right;
+    font-size: 30px;
+}
+
+.h230px {
+    font-size: 30px;
+}
+
+h3,
+a {
+    color: red;
+    text-align: right;
+}
+
+i {
+    font-size: 40px;
+}
+
+table {
+    background-color: cyan;
+    border-spacing: 5px;
+}
+
+.col {
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+}
