@@ -1,0 +1,17 @@
+Products {background-color: rgb(124, 228, 111) Font-family:Verdana, Times, sans-serif;}
+
+Prod, Details, Short_Desc, Long_Desc Quantity, Unit_Price, Color, Loc { display: block; }
+
+Prod:nth-child(even) { background-color: skyblue;}
+
+Details { font-weight: bold; color: rgb(32, 80, 236); font-size: 1.3em;}
+
+Long_Desc { font-weight: bold; color: Black; font-size: 1.0em;}
+
+Quantity { font-weight: bold; font-style:italic; font-size: 1.3em;}
+
+Unit_Price { font-style:italic; font-size: 1.3em; }
+
+Color { font-style:italic; font-size: 1.3em; }
+
+Loc { font-weight: bold; color: red; font-size: 1.5em; }

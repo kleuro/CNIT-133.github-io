@@ -1,0 +1,13 @@
+    states {
+        background-color: rgb(59, 176, 223);
+        font-family: Verdana, Times, sans-serif;
+    }
+    
+    states,
+    state {
+        display: block;
+    }
+    
+    states:nth-child(even) {
+        background-color: lightgray;
+    }
