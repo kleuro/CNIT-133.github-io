@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment 7</title>
+    <meta charset="utf-8">
+    <meta name="description" content="working with forms from float CSS to grid">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        form {
+            padding: 1em;
+            background: #f9f9f9;
+            border: 1px solid black;
+            margin-top: 2rem;
+            max-width: 430px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1em;
+        }
+        
+        form input {
+            margin-bottom: 1rem;
+            background: white;
+            border: 1px solid #9c9c9c;
+        }
+        
+        label {
+            text-align: right;
+            display: block;
+            padding: 0.5em 1.5em 0.5em 0;
+        }
+        
+        .myinput {
+            width: 100%;
+            padding: 0.7em;
+            margin-bottom: 0.5rem;
+        }
+        
+        input:focus {
+            background-color: gold;
+        }
+        
+        form div {
+            text-align: center;
+        }
+        
+        input[type="submit"],
+        input[type="reset"] {
+            background: lightgray;
+            padding: 0.7em;
+            border: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            font-style: italic;
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Assignment 7 - working with forms</h1>
+    <form class="form1" action="#" method="post">
+        <label for="fullname">Full Name</label>
+        <input type="text" placeholder="Full Name" id="fullname" size="50" maxlength="15" required><br>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" placeholder="Last Name" id="lastname" size="50" maxlength="25" required><br>
+
+        <label for="age">Age</label>
+        <input type="number" placeholder="Age" min="18" max="65" title="" id="age" required><br>
+
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email Address" id="email" size="50" maxlength="45" required><br>
+
+        <label for="date">Date of your Membership</label>
+        <input type="date" max="2020-12-31" id="date" size="50" required><br>
+
+        <label for="reward">Choose your reward</label>
+        <input list="datalist" placeholder="Choose your reward" id="reward" size="50" maxlength="15" required><br>
+        <datalist id="datalist">
+            <option value="Two-year Member Magazine subscuption">
+            <option value="2 Tickets to Annual Seminar">
+            <option value="Voucher $100 food during seminar">
+            <option value="1-day hotel stay for Seminar">
+        </datalist>
+        <div><input type="submit" value="Submit"> &nbsp; <input type="reset" value="Clear"></div>
+    </form>
+</body>
+
+</html>

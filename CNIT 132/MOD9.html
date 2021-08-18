@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Playing with Tables</title>
+    <meta charset="utf-8">
+    <meta name="description" content="working with thead, tbody, tfoot, in tables">
+    <style>
+        table {
+            border: 3px solid black;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+        
+        caption {
+            caption-side: bottom;
+            font-weight: bold;
+        }
+        
+        tr,
+        td {
+            border: 1px solid black;
+        }
+        
+        th {
+            text-align: center;
+        }
+        
+        td[colspan] {
+            text-align: center;
+        }
+    </style>
+
+    <p>Below we will find a table so we can include more rows, cells and play around with some of the attributes</p>
+    <table>
+        <caption>Table with sections</caption>
+        <thead>
+            <tr>
+                <td colspan="2" rowspan="2"></td>
+                <th colspan="3">City College of San Francisco</th>
+            </tr>
+            <tr>
+                <th>CNIT-131</th>
+                <th>CNIT-132</th>
+                <th>CNIT-133</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="5">Data retrieved from Registration Office</td>
+                <tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th rowspan="3">Period</th>
+                <th>Spring 2009</th>
+                <td>28</td>
+                <td>25</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <th>Fall 2009</th>
+                <td>37</td>
+                <td>32</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <th>Spring 2010</th>
+                <td>35</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+    </body>
+
+</html>
