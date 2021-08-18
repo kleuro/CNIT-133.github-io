@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+            xmlns:eat="http://www.gov.org/east"
+            xmlns:wet="http://www.gov.org/west"
+            elementFormDefault="qualified"
+            targetNamespace="http://www.gov.org/states">
+    <xs:complexType name="states">
+        <xs:sequence>
+            <xs:element name="name" type="newElement"/>
+            <xs:element name="capital" type="newElement1"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="">
+        <xs:sequence>
+            <xs:element name="name" type="newElement"/>
+            <xs:element name="capital" type="newElement1"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
