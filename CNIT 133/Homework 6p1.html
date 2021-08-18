@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CNIT 133 HW6 P1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="homework 6.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1><em>Homework 6 <q>Part 1</q></em></h1>
+    <div class="logo">
+        <img src="img/ccsf.png">
+    </div>
+    <br>
+    <hr>
+    <h2>Math.round,sqrt,floor, toFixed</h2>
+    <br>
+    <section class="body">
+        <div id="errOut"></div>
+        <form name="myForm">
+            <table class="tb1">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="input">"Enter a number"
+                            <br>"At least 4 decimal positions"
+                        </label>
+                        </td>
+                        <td>
+                            <input name="input" id="number" type="text" size="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="Click to Round" onclick="roundNumber()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="output">Results of Math</label>
+                        </td>
+                        <td>
+                            <textarea class="op" name="output" rows="8" cols="10" width="30" readonly style="margin:0px; height:128px; width:850px"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </section>
+    <div class="button">
+        <li class="btn btn-one">
+            <a href="Homework 6.html"> Back to Homepage</a>
+        </li>
+        <li class="btn btn-two">
+            <input type="reset" value="Reset" onclick="window.location.reload();">
+        </li>
+    </div>
+    <script>
+        function roundNumber() {
+            var errMsg = "Invalid input";
+            if (isNaN(document.getElementById("number").value) || (document.getElementById("number").value) == "") {
+                document.getElementById("errOut").innerHTML = errMsg;
+            } else {
+                var num = parseFloat(document.getElementById("number").value);
+
+                document.myForm.output.value =
+                    "The entered number: " + num +
+                    "\n rounded to the nearest integer using math round: " +
+                    roundToIntegerRound(num) +
+                    "\n rounded to the nearest integer using math square: " +
+                    roundToIntegerSqrt(num) +
+                    "\n rounded to the nearest tenthth using math floor: " +
+                    roundToHundredthsRound(num) +
+                    "\n rounded to the nearest hundredth using math round: " +
+                    roundToHundredthsRound(num) +
+                    "\n rounded to the nearest thousandth using math round: " +
+                    roundToHundredthsRound(num);
+            }
+        }
+
+        function roundToIntegerRound(number) {
+            return (Math.round(number));
+        }
+
+        function roundToIntegerSqrt(number) {
+            return (Math.sqrt(40));
+        }
+
+        function roundToTenthsRound(number) {
+            return (Math.round(number * 100));
+        }
+
+        function roundToHundredthsRound(number) {
+            return (Math.floor(number * 100 + .5) / 100);
+        }
+
+        function roundToThousandthsRound(number) {
+            return (Math.floor(number * 1000 + .05) / 1000);
+        }
+
+        function res() {
+            document.getElementById("errOut").innerHTML = "";
+            document.getElementById("number").focus();
+        }
+    </script>
+</body>
+
+</html>

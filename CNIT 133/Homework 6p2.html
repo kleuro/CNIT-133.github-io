@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CNIT 133 HW6 P2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" media="all">
+    <link href="Homework 6.css" rel="stylesheet" type="text/css">
+    <script>
+        function search() {
+            var count = 0;
+            var key = document.getElementById("key").value.toLowerCase().charAt(0);
+            var key = key.toLowerCase();
+            var stringToSearch = document.getElementById("content").value;
+            var stringToSearch = stringToSearch.toLowerCase();
+            for (i = 0; i < stringToSearch.length; i++) {
+                if (stringToSearch.charAt(i) == key)
+                    count++;
+            }
+            if (count == 0) {
+                var notificationWindow = window.alert("Your entered is not an invalid character according to the content");
+                document.getElementById("output").value = ""
+            } else
+                document.getElementById("output").value = count +
+                " occurrence(s) of " + key + " found ";
+        }
+    </script>
+</head>
+
+<body>
+    <h1><em>Homework 6 <q>Part 2</q></em></h1>
+    <div class="logo">
+        <img src="img/ccsf.png">
+    </div>
+    <br>
+    <hr>
+    <h2>String & charAt</h2>
+    <br>
+    <form id="myForm">
+        <table class="tb2">
+            <tbody>
+                <tr>
+                    <td>
+                        <label> "Enter Content" <br> "[Text only]"</label>
+                    </td>
+                    <td>
+                        <input id="content" type="text" size="30">
+                    </td>
+                    <tr>
+                        <td>
+                            <label>"Enter a character to search"
+                            <br>"[Text only]"</label>
+                        </td>
+                        <td>
+                            <input id="key" type="text" size="30" autofocus>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Object Exercise Solution 3 - charAt()</h3>
+                        </td>
+                        <td>
+                            <li class="btn btn-two">
+                                <input type="button" value="Search" onclick="search();">
+                            </li>
+                            <li class="btn btn-two">
+                                <input type="reset" value="Reset" onclick="location.reload();">
+                            </li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Results of character</label>
+                        </td>
+                        <td>
+                            <input type="text" id="output" size="30" readonly>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+    </form>
+    <div class="button">
+        <li class="btn btn-one">
+            <a href="Homework 6.html"> Back to Homepage</a>
+        </li>
+    </div>
+
+</body>
+
+</html>
