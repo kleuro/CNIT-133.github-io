@@ -173,3 +173,9 @@ footer {
     text-align: center;  
     color: rgb(225, 225, 236);
 }
+
+
+.btn [href$='.html'], 
+.btn [href$='.htm']{background: transparent url(browser.png) right no-repeat; padding-right: 45px;}
+.btn [href$='.pdf']{background: transparent url(pdf.png) right no-repeat; padding-right: 35px;}
+btn {background: transparent url(intmark.png) right no-repeat; padding-right: 35px;}

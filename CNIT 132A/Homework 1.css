@@ -43,3 +43,12 @@ a {
     font-size: 25px;
     color: rgb(251, 251, 253);
 }
+
+#ul {
+    list-style-image: img('brower.png');
+}
+
+a[href$='.html'], 
+a[href$='.htm']{background: transparent url(browser.png) right no-repeat; padding-right: 45px;}
+a[href$='.pdf']{background: transparent url(pdf.png) right no-repeat; padding-right: 35px;}
+a{background: transparent url(intmark.png) right no-repeat; padding-right: 35px;}
