@@ -112,10 +112,10 @@ hr {
 }
 
 .main-nav li a {
-    font-size: 17px;
+    font-size: 20px;
     font-family: "Roboto", monospace;
     border: 1px solid rgb(236, 24, 42);
-    color: rgb(245, 235, 235);
+    color: rgb(226, 46, 211);
     padding: 3px 15px;
 }
 
