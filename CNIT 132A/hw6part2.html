@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Shapes</title>
+  <meta name="description" content="using CSS shapes">
+  <meta charset="utf-8">
+  <style>
+	  body { font: 1.2em Helvetica, Arial, sans-serif; background-color: beige; }
+
+    .content {max-width: 700px; margin: 60px auto;}
+
+    .img { 
+          float: left;  
+          width: 250px;         
+          shape-outside: url(house.png); 
+          shape-margin: 10px;
+          }
+  </style>
+  
+</head>
+<body>
+<h1>Homework 6 - CSS Shapes</h1>
+<section class="content">
+  <div >
+    <img src="house.png" alt="house shapes" class="img">
+    <p>This is a paragraph that will start on the right side of the purple drop as the purple drop has received the CSS class of drop and that class has the float:left CSS property being applied to it. The idea is that we will modify that class to include CSS shape and you will see that the these two paragraphs will then follow the shape of that purple drop, following the curve of the purple drop instead of just following a rectangular shape of the width and height of the image.</p>
+  
+    <p>This is the start of the second paragraph and this paragraph will also follow the float of the image until the end of its height. When the height of the image is achieved, the paragraph will then continue normally starting from the left of the browser and continuing to the right and down.</p>
+  
+    <p>This is the third paragraph and, by now, I am not sure if this paragraph will be written on the right side of the image or the paragraph has been placed below the image starting on the left side of the browser and being normally displayed as any other element of a web page. But initially the float will follow a rectangular shape based on the width and height of the whole image.</p>
+  </div>
+
+
+
+</section>
+     
+</body>
+</html>
