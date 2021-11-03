@@ -1,56 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="style.css" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wild Life</title>
+  <title>ABC Toys</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="using Semantic UI">
+  <link rel="stylesheet" href="Semantic-UI-CSS-master/semantic.min.css"> 
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+  <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
 </head>
-
 <body>
-    <div id="header">
-        <h1>Welcome to Wildlife for Life</h1>
-        <h2>We fight for life</h2>  
-        <ul class="navigation">
-            <li><a href="index.html" title="home">Home</a></li>
-            <li><a href="#" title="contact">Contact Us</a></li>
-        </ul>
+  
+<h1 class="ui top attached header">ABC Toys</h1>
+<h3 class="ui attached header">Making learning fun</h3>
+
+<div class="ui attached stackable menu">  
+  
+  <div class="ui container"></div>
+    <div class="ui simple dropdown item">Product<i class="dropdown icon"></i>
+      <div class="menu">        
+          <p><img class="ui mini right spaced image" src="google.png">Toy 1</p>  
+          <p><img class="ui mini right spaced image" src="lego.png">Toy 2</p> 
+          <p><img class="ui mini right spaced image" src="trans.png">Toy 3</p>                 
+      </div>
+    </div> 
+    <a class="item active"><i class="globe icon"></i>Website</a>    
+    <a class="item"><i class="sitemap icon"></i>Sitemap</a>   
+    <a class="item"><i class="setting icon"></i>Setting</a>
+    <div class="right item">
+      <div class="ui input"><input type="text" placeholder="Search..."></div>
     </div>
+  </div>
+  
+</div>
+
+<br><br>
+
+<div class="ui blue three vertical menu">   
+  <a class="item active"><i class="home icon"></i>Home</a>
+  <a class="item "><i class="list icon"></i>Product</a>   
+  <a class="item" href="contact us.html"><i class="mail icon"></i>Contact Us</a> 
+  <a class="item" href="geo.html"><i class="map icon"></i>Geolocation</a>  
+</div>
 
 
-    <div class="content">
-    
-    <div class="col-right">   
-        <h1>The Wild Life is great</h1><br />
-        <p>Wild Life includes all non-domesticated plants, animals and other organisms.</p>
-        <p>Wildlife can be found in all ecosystems. Deserts, forests, rain forests, plains, grasslands, and other areas including the most developed urban sites, all have distinct forms of wildlife.</p><br />
-        
-        <h3>Destruction</h3><br />
-        <img src="images/img1.jpg" class="float-left" alt="alternative text.  This text is for screen readers or in the instance an image can't load, a description of what should have been here." />
-        <p>Exploitation of wild populations has been a characteristic of modern man since our exodus from Africa 130,000 – 70,000 years ago. The rate of extinctions of entire species of plants and animals across the planet has been so high in the last few hundred years it is widely believed that we are in the sixth great extinction event on this planet</p><br />
-        
-        <h3 class="clear">Food, pets, and traditional medicines</h3><br />
-        <p>Anthropologists believe that the Stone Age people and hunter-gatherers relied on wildlife, both plants and animals, for their food. In fact, some species may have been hunted to extinction by early human hunters.</p>
+
+
+<div class="ui raised very padded text container segment">
+  <p>ABC Toys is a company that opened its doors in 2001 and it has kept its mission for all those years.</p>
+  <p>The mission of our company is to create toys that are safe for kindergarten kids but that challenge the kids' mind and motor skills making learning a fun task.</p>
+  <p>By the way, parents love our toys too</p>
+  <div class="ui labeled button">
+    <div class="ui red button">
+      <i class="heart icon"></i> Likes
     </div>
-    
+    <a class="ui basic red left pointing label">
+      199
+    </a>
+  </div>
+</div>
 
-    <div class="sidebar-left">
-    	<h3>Favorite links</h3>
-    	<ul class="list">
-        	<li><a href="http://wildlife-museum.org/" title="Lindsay Wildlife Museum">Lindsay Wildlife Museum</a></li>
-            <li><a href="http://www.worldwildlife.org/home-full.html" title="WWF">WWF</a></li>
-        </ul>   
-        <h3>News</h3>
-        <p>Aug/2012 - About forty Blue whales have been sighted swimming in waters 15 miles west of La Jolla.</p>
-        <p>Aug/2012 - Three tigers have been found dead in India in the last week. The carcass of a ten year old tigress was found in Kanha Tiger Reserve, and another female tiger was found in a very poor state of health in the same reserve. Unfortunately vets could not save her.</p>
-    </div>
-    <br class="clear" />  <!-- this code is clearing the floats from the above divs.  See what happens when you take it away to really learn what clear does... -->
-    </div>
+<br><br>
 
-
-    <div id="footer">
-        <p>We believe that we can all live together in Planet Earth</p>
-    </div>
-
+<script>src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.min.css"</script>
 </body>
 </html>
