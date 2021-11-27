@@ -2,7 +2,7 @@ var CACHE_VERSION = 'myapp-v1';
 var CACHE_FILES = [
     'images/offline.png',
     'app.js',
-    'style1.css'
+    'style4.css'
 ];
 
 self.addEventListener('install', event => {
